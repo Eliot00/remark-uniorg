@@ -1,0 +1,45 @@
+{
+  "name": "remark-uniorg",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "main": "./dist/remark-uniorg.umd.cjs",
+  "module": "./dist/remark-uniorg.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/remark-uniorg.js",
+      "require": "./dist/remark-uniorg.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Elliot Xu",
+    "email": "hack00mind@gmail.com"
+  },
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@types/mdast": "^4.0.3",
+    "@types/unist": "^3.0.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.2",
+    "unified": "^11.0.4",
+    "uniorg": "^1.1.1",
+    "vite": "^5.1.6",
+    "vite-plugin-dts": "^3.7.3",
+    "vitest": "^1.3.1"
+  },
+  "dependencies": {
+    "unist-builder": "^4.0.0",
+    "unist-util-visit": "^5.0.0"
+  }
+}
